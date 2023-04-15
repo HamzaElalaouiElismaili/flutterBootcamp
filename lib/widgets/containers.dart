@@ -27,25 +27,41 @@ class ContentHolder extends StatelessWidget {
 
 
           Container(
+            alignment: Alignment.center,
             width: 100,
             height: 100,
             color: Colors.red,
+            decoration: BoxDecoration(
+              color: Colors.red,
+              borderRadius: const BorderRadius.all(Radius.circular(10)),
+              border: Border.all(width: 5 , color: Colors.blue),
+
+            ),
+            child: const Text("Hello"),
           ),
 
           Container(
             width: 100,
             height: 100,
             color: Colors.red,
-            decoration: const BoxDecoration(
+            decoration:  BoxDecoration(
               color: Colors.red,
-              borderRadius: BorderRadius.all(Radius.circular(10)),
-              border: Border(
-                top: BorderSide(width: 1.0, color: Colors.black),
-                left: BorderSide(width: 1.0, color: Colors.black),
-                right: BorderSide(width: 1.0, color: Colors.black),
-                bottom: BorderSide(width: 1.0, color: Colors.black),),
+              borderRadius: const BorderRadius.all(Radius.circular(10)),
+              border: Border.all(width: 5 , color: Colors.blue),
+            ),
+          ),
+
+
+          Container(
+            width: 100,
+            height: 100,
+            color: Colors.red,
+            decoration:  BoxDecoration(
+              color: Colors.red,
+              borderRadius: const BorderRadius.all(Radius.circular(10)),
+              border: Border.all(width: 5 , color: Colors.blue),
               boxShadow: [
-                BoxShadow(
+                const BoxShadow(
                   color: Colors.black,
                   blurRadius: 10,
                   spreadRadius: 5,
@@ -61,6 +77,11 @@ class ContentHolder extends StatelessWidget {
             subtitle: Text('Subtitle'),
             trailing: Icon(Icons.arrow_forward_ios),
           ),
+
+
+          const Divider(),
+
+          const Spacer(),
 
 
 
