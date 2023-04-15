@@ -19,16 +19,17 @@ class TextHolder extends StatelessWidget {
     return Scaffold(
 
       body: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
         children:
           [
+            const SizedBox(height: 20,),
+            const Text("Digital Media"),
 
-           const Text("Digital Media"),
+            const Text("Digital Media", textAlign: TextAlign.center,),
 
-           const Text("Digital Media", textAlign: TextAlign.center,),
+            const Text("Digital Media", textAlign: TextAlign.center,overflow: TextOverflow.ellipsis,), // Digital Med...
 
-           const Text("Digital Media", textAlign: TextAlign.center,overflow: TextOverflow.ellipsis,), // Digital Med...
-
-           const Text("Digital Media", textAlign: TextAlign.center,overflow: TextOverflow.ellipsis,textDirection: TextDirection.ltr,),
+            const Text("Digital Media", textAlign: TextAlign.center,overflow: TextOverflow.ellipsis,textDirection: TextDirection.ltr,),
 
            // Style Text
            const Text("Digital Media 1", style: TextStyle(color: Colors.orange),),

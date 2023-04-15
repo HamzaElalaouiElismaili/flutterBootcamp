@@ -36,7 +36,6 @@ class ButtonsHolder extends StatelessWidget {
           ),
 
           const SizedBox(height: 10,),
-
           TextButton(
             style: TextButton.styleFrom(
               primary: Colors.blue,
